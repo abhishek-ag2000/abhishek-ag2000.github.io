@@ -513,7 +513,7 @@ a:focus {
 .sidebar-menu > li > a > .fa,
 .sidebar-menu > li > a > .glyphicon,
 .sidebar-menu > li > a > .ion {
-  width: 20px;
+  width: 10px;
 }
 .sidebar-menu > li .label,
 .sidebar-menu > li .badge {
@@ -567,8 +567,8 @@ a:focus {
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
-    width: 50px !important;
-    z-index: 850;
+    width: 50px;
+   
   }
   .sidebar-mini.sidebar-collapse .sidebar-menu > li {
     position: relative;
