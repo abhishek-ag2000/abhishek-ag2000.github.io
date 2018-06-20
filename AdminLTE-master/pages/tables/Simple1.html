@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Balance Sheet</title>
+  <title>Balance Sheet</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -17,6 +17,9 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <link href="../../dist/css/select2.min.css" rel="stylesheet" />
+  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -336,10 +339,10 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-files-o"></i>
+            <i class="fa fa-pie-chart"></i>
             <span>Groups</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -376,23 +379,10 @@
             <li><a href="#"><i class="fa fa-circle-o"></i> Sunline Debitors</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Suspense A/c</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Unsecured Loans</a></li>
-          </ul>
+           </ul>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-pie-chart"></i>
-            <span>Billing</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="Sales Invoice.html"><i class="fa fa-circle-o"></i> Sales Invoice</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Purchase Invoice</a></li>
-            </ul>
-        </li>
-
-        <li class="treeview">
+        
+          <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Ledgers</span>
@@ -413,6 +403,31 @@
               <li><a href="#"><i class="fa fa-circle-o"></i>Display</a></li>
               <li><a href="#"><i class="fa fa-circle-o"></i>Alter</a></li>
               </ul></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Billing</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="Sales_Invoice.html"><i class="fa fa-circle-o"></i> Sales Invoice</a></li>
+            <li><a href="Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Purchase Invoice</a></li>
+            </ul>
+            </li>
+            <li class="treeview">
+            <a href="#">
+            <i class="fa fa-table"></i> <span>Balance Sheet</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
+            <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -615,7 +630,7 @@
         <div class="col-md-10 col-md-offset-2">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Balance Sheet</h3>
+              <h1 class="box-title">Balance Sheet</h1>
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -845,15 +860,6 @@
     <!-- /.content -->
     <!-- /.content -->
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
-    </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
-  </footer>
-
-  <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
@@ -1061,5 +1067,7 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="../../dist/js/select2.min.js"></script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Purchase Invoice</title>
+  <title>Sales Invoice</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -381,8 +381,7 @@
             <li><a href="#"><i class="fa fa-circle-o"></i> Unsecured Loans</a></li>
            </ul>
         </li>
-        
-          <li class="treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Ledgers</span>
@@ -414,12 +413,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="Sales_Invoice.html"><i class="fa fa-circle-o"></i> Sales Invoice</a></li>
-            <li><a href="Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Purchase Invoice</a></li>
+            <li><a href="Sales Invoice.html"><i class="fa fa-circle-o"></i> Sales Invoice</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Purchase Invoice</a></li>
             </ul>
             </li>
-            <li class="treeview">
-            <a href="#">
+          
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-table"></i> <span>Balance Sheet</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -574,7 +574,7 @@
     <section class="content-header">
       <div class="col-md-12 col-md-offset-4">
       <h1>
-       <strong>Purchase Invoice</strong>
+       <strong>Sales Invoice</strong>
        </h1>
        </div>
       
@@ -1000,7 +1000,7 @@
   </div> -->
         <div class="row">
           <div class="col-md-12">
-            <div class="box box-success">
+            <div class="box box-info">
               
               <div class="box-body form-responsive no-padding">
 
@@ -1010,7 +1010,7 @@
                    <form class="form-horizontal">
                      
                      <div class="form-group">
-                       <label for="Buyer3" class="col-md-4 control-label" style="font-size: x-small;">Buyer Information</label>
+                       <label for="Buyer3" class="col-md-4 control-label" style="font-size: x-small;">Seller Information</label>
                        <div class="col-md-8">
                          <p style="margin: 5px">
                          <small><strong>BATTERY CORPORATION</strong><br>
@@ -1024,7 +1024,7 @@
                      </div>
 
                     <div class="form-group">
-                       <label for="Seller2" class="col-md-4 control-label" style="font-size: x-small;">Name of Seller</label>
+                       <label for="Seller2" class="col-md-4 control-label" style="font-size: x-small;">Name of Buyer</label>
                        <div class="col-md-8">
                         <input type="text" class="form-control" id="Name" placeholder="" style="margin: 5px">
                       </div>
@@ -1203,7 +1203,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div class="box box-success">
+            <div class="box box-info">
               <div class="box-header with-border">
                <h2 class="box-title"><strong>Stock Details</strong></h2>
              </div>
@@ -1330,7 +1330,7 @@
        </style>
         <div class="row">
               <div class="col-md-12">
-               <div class="box box-success">
+               <div class="box box-info">
                <div class="box-header with-border">
                <h2 class="box-title"><strong>Tax Details</strong></h2>
              </div>
@@ -1477,7 +1477,7 @@
 
         <div class="row">
           <div class="col-md-4 col-sm-offset-4">
-          <input type="submit" class="btn btn-success btn-lg btn-block" value="Generate Sales Invoice">
+          <input type="submit" class="btn btn-info btn-lg btn-block" value="Generate Sales Invoice">
           <input type="reset" class="btn btn-danger btn-block" value="Clear All">
           </div>
         </div>
