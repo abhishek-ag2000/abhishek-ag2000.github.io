@@ -12,14 +12,18 @@
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
 
   <link href="../../dist/css/select2.min.css" rel="stylesheet" />
-  
+ 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -323,9 +327,9 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
+       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li><a href="index3.html"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
+        <li><a href="../../index3.html"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
         
         <li class="treeview">
           <a href="#">
@@ -394,11 +398,24 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
-            <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
           </ul>
         </li>
 
-        <li><a href="index3.html"><i class="fa fa-book"></i> <span>Profit & Loss</span></a></li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Profit & Loss</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="P&L.html"><i class="fa fa-circle-o"></i> Profit & Loss Overview</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III<br>Format</a></li>
+            </ul>
+            </li>
+
 
         <li class="treeview">
           <a href="#">
@@ -429,7 +446,7 @@
           <ul class="treeview-menu">
             <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Day Book</a></li>
             <li><a href="Sales_Register.html"><i class="fa fa-circle-o"></i> Sales Register</a></li>
-            <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Purchase Register</a></li>
+            <li><a href="Purchase_Register.html"><i class="fa fa-circle-o"></i> Purchase Register</a></li>
             <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Journal Register</a></li>
             <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Cash/Funds Flow</a></li>
             <li><a href="pages/tables/Simple1.html"><i class="fa fa-circle-o"></i> Receipts And Payments</a></li>
@@ -1210,7 +1227,7 @@
        <style type="text/css">
 
         .table-bordered td, .table-bordered th{
-           border-color: black !important;
+           border-color: #bfbfbf !important; 
                     
          }
        </style>
@@ -1365,6 +1382,7 @@
           <div class="col-md-4 col-sm-offset-4">
           <input type="submit" class="btn btn-success btn-lg btn-block" value="Generate Sales Invoice">
           <input type="reset" class="btn btn-danger btn-block" value="Clear All">
+          <br>
           </div>
         </div>
         
