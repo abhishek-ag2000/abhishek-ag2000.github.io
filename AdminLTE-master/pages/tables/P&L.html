@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Purchase Register</title>
+  <title>Profit & Loss Overwiew</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
 
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
@@ -471,231 +471,318 @@
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="col-md-12 col-md-offset-4">
-      <h1>
-       <strong>Purchase Register</strong>
-       </h1>
-       </div>
-     </section>
 
-     <style type="text/css">
-      .table-bordered td, .table-bordered th{
-        border-color: black !important;
-      }
-     </style>
+     <section class="content-header">
+      <section class="content-header">
+            <div class="col-md-12 col-md-offset-4">
+              <h1>
+               <strong>Profit & Loss Account</strong>
+              </h1>
+            </div>
+      </section>
+     
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box box-success">
-          
-          <div class="box-body table-responsive no-padding">
-            <table class="table table-bordered">
-              
-              <tr>
-                <th class="text-center" style="width: 40%;">Particulars</th>
-                <th class="text-center" style="width: 60%"><centre>ABC Company<br></centre>
-                <div class="col-md-12">
-    
-                <label class="col-md-4">Select Period:</label>
-              <div class="col-md-4">
-                <div class="input-group col-md-4">
-                  <div class="input-group-addon">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="box box-info">
+            <div class="box-header">
+
+             
+          <div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6">
+                <label class="col-md-4 col-sm-4 col-xs-4">Select Period:</label>
+                 
+                <div class="input-group col-md-8 col-sm-8 col-xs-8">
+                  <div class="input-group-addon" style="width: 20px">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px">
-                 
-              </div>  <!-- /.input group -->
+                  <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 150px">
+                
+                <!-- /.input group -->
               </div>
-              </tr>
+            </div>                  
+                             
+                 
 
-              <tr>
-                <th>
-                  <table class="table table-bordered">
-                    <tr>
-                      <th class="text-center"><br><small>Months</small><br><br></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>April</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>May</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>June</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>July</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>August</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>September</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>October</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>November</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>December</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>January</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>February</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>March</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small><br>Grand Total</small></center></th>
-                      </tr>
-                    </tr>
-                  </table>
-                </th>
-                      
-                      <th>
-                        <table class="table table-bordered">
-                          <tr>
-                            <th><center><small>Transactions</small></center></th>
-                            <th><center><small>Closing Balance</small></center></th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <table class="table table-bordered">
-                                <tr>
-                                  <th style="width: 50%"><center><small>Debit</small></center></th>
-                                  <th style="width: 50%"><center><small>Credit</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>77,45,475.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>28,11,300.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>39,73,500.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>31,37,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>31,31,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>19,60,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>23,55,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>24,50,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>39,20,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>22,96,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>16,87,500.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>36,36,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small><br></small></center></th>
-                                  <th><center><small><br>3,91,63,696.00</small></center></th>
-                                </tr>
-                              </table>
-                            </td>
-                            <td>
-                              
-                              <table class="table table-bordered">
-                                <tr>
-                                  <th><center><small>Closing Balance</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>37,45,475 Cr</small><center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,05,56,775.00 Cr</small><center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,45,30,275.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,76,63,696.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,07,56,946.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,27,56,896.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,51,78,999.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,71,34,389.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>3,14,63.567.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>3,56,89,899.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>4,12,34,888.00 Cr</small></center></th>
-                                  <tr>
-                                  <th><center><small>4,52,34,888.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small><br>4,52,34,888.00 Cr</small></center></th>
-                                  </tr>
-                                  </tr>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </th>
-              </tr>
-            </table>
+              <!-- <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-left" placeholder="Search">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div> -->
+            
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-bordered">
+                <tr>
+                  <th>Sl no</th>
+                  <th>Particulars</th>
+                  <th>Amount</th>
+                  <th>Total Amount</th>
+                  <th>Sl no</th>
+                  <th>Particulars</th>
+                  <th>Amount</th>
+                  <th>Total Amount</th>
+                  </tr>
+                
+                <tr>
+                  <td>1</td>
+                  <td>Opening Stock</td>
+                  <td></td>
+                  <th>39,94,116.47</th>
+                  <td>1</td>
+                  <th>Sales Accounts</th>
+                  <td></td>
+                  <th>3,72,80,557.44</th>
+                  <!-- <td><span class="label label-success">Approved</span></td> -->
+                  
+                </tr>
+                  <tr>
+                  <td>2</td>
+                  <th>Purchase account</th>
+                  <td></td>
+                  <th>54,40,701.60</th>
+                  <td></td>
+                  <td>Sale-S.E. Rly</td>
+                  <td>3,29,78,376.06</td>
+                  <td></td>
+                  <!-- <td><span class="label label-warning">Pending</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td> -->
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><em>Purchase of Ballast-1</em></td>
+                  <td>3,37,701.60</td>
+                  <td></td>
+                  <td></td>
+                  <td><em>Direct Sale</em></td>
+                  <td>13,93,263.60</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><em>Purchase Raw Materials</em></td>
+                  <td>51,03,000.00</td>
+                  <td></td>
+                  <td></td>
+                  <td><em>Sale-Direct</em></td>
+                  <td>29,08,917.78<br>______________</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <th>Gross Profit c/o</th>
+                  <td></td>
+                  <th>3,12,77,000.57</th>
+                  <td>2</td>
+                  <td>Closing Stock</td>
+                  <td></td>
+                  <th>34,31,261.20</th>
+                </tr>
+                <tr>
+                 <td></td>
+                  <td></td>
+                  <td></td>
+                  <th>______________<br>4,07,11,818.64<br>______________</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th>______________<br>4,07,11,818.64<br>______________</th>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Indirect Expenses</td>
+                  <td></td>
+                  <th>1,72,10,017.54</th>
+                  <td>3</td>
+                  <td>Gross Profit b/f</td>
+                  <td></td>
+                  <th>3,12,77,000.57</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Compressor Exp</td>
+                  <td>37,544</td>
+                  <th></th>
+                  <td>4</td>
+                  <th>Indirect Incomes</th>
+                  <td></td>
+                  <th>30,000.00</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Crusher Exp</td>
+                  <td>39,78,177.00</td>
+                  <th></th>
+                  <td></td>
+                  <td><em>Provision Of Interest</em></td>
+                  <td>30,000.00<br>____________</td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>General Exp</td>
+                  <td>32,20,397.42</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <th>Loaders Exp</th>
+                  <td>1,72,473.00</td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Quarries Exp</td>
+                  <td>25,50,303.00</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>S.E. Rly Exp</td>
+                  <td>52,43,318.00</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>Vechicle Exp</td>
+                  <td>8,29,090.43</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <th>Car & Jeep Exp</th>
+                  <td>79,310.54</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>Depreciation</td>
+                  <td>10,93,075.80</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>Scooter & Motor Cycle</td>
+                  <td>6,328.00<br>_____________</td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                </tr>
+                 <tr>
+                  <td>5</td>
+                  <th>Consumable</th>
+                  <td></td>
+                  <th>12,79,040.04</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>6</td>
+                  <th>Power & Fuel</th>
+                  <td></td>
+                  <th>51,18,709.49</th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <th>Profit & Loss Appropriation A/c</th>
+                  <td></td>
+                  <th>16,01,076.00</th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <th>Spare Parts</th>
+                  <td></td>
+                  <th>49,69,365.23</th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Nett Profit</td>
+                  <td></td>
+                  <th>11,28,792.27</th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <th>Total</th>
+                  <td></td>
+                  <th>4,14,07,000.57</th>
+                  <td></td>
+                  <th>Total</th>
+                  <td></td>
+                  <th>4,14,07,000.57</th>
+                </tr>
+                </table>
+                </div>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
-
-
-
-  
-
-
-
-
-
-
-      <aside class="control-sidebar control-sidebar-dark">
+</div>
+           
+          <!-- /.box -->
+    <!-- /.content -->
+    <!-- /.content -->
+  <!-- /.content-wrapper -->
+  <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -897,6 +984,10 @@
 
 <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!-- Slimscroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -909,20 +1000,16 @@
 <script src="../../dist/js/demo.js"></script>
 <script src="../../dist/js/select2.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-
-<script>
-$(function() {
+<script type="text/javascript">
+  
+  $(function() {
   $('input[name="daterange"]').daterangepicker({
     opens: 'left'
   }, function(start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
   });
 });
 </script>
-
 </body>
 </html>
+
