@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
@@ -395,12 +397,25 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
-            <li><a href="Balance_Sheet_Data.html"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
+            <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
           </ul>
         </li>
 
-        <li><a href="index3.html"><i class="fa fa-book"></i> <span>Profit & Loss</span></a></li>
+       <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Profit & Loss</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Profit & Loss Overview</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III<br>Format</a></li>
+            </ul>
+            </li>
+
 
         <li class="treeview">
           <a href="#">
@@ -475,14 +490,26 @@
 
     <div class="row">
       <div class="col-md-12">
-        <div class="box box-success">
+        <div class="box box-info">
           
           <div class="box-body table-responsive no-padding">
             <table class="table table-bordered">
               
               <tr>
                 <th class="text-center" style="width: 40%;">Particulars</th>
-                <th class="text-center" style="width: 60%"><centre>ABC Company<br></centre><input type="date" class="form-control col-md-6" id="Date5" placeholder="" style="width: 40%"><span class="col-md-2">to</span> <input type="date" class="form-control col-md-2" id="Date6" placeholder="" style="width: 40%"></th>
+                <th class="text-center" style="width: 60%"><centre>ABC Company<br></centre>
+                <div class="col-md-12">
+    
+                <label class="col-md-4">Select Period:</label>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px">
+                </div>
+              </div>  <!-- /.input group -->
+              </div>
               </tr>
 
               <tr>
@@ -883,7 +910,19 @@
 <script src="../../dist/js/demo.js"></script>
 <script src="../../dist/js/select2.min.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
 </body>
 </html>
 
