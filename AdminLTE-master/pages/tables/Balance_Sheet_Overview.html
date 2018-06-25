@@ -333,7 +333,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Accounts</span>
+            <i class="fa fa-share"></i> <span>Entry and Posting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-         <li><a href="index3.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
+         <li><a href="trial_bal.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
 
            <li class="treeview">
           <a href="#">
@@ -420,7 +420,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Billing Vouchers</span>
+            <span>Invoicing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -431,7 +431,22 @@
             </ul>
             </li>
 
-            <li><a href="index3.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+            <li><a href="Stock_Sheet.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+
+            <li class="treeview">
+             <a href="#">
+             <i class="fa fa-pie-chart"></i>
+             <span>Cash & Bank Balance</span>
+             <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+             </span>
+             </a>
+            <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Cash Account</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Bank Account</a></li>
+            </ul>
+            </li>
+
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Tax Analysis</span></a></li>
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Create Voucher</span></a></li>
 
@@ -466,6 +481,11 @@
         
         
          <li><a href="index3.html"><i class="fa fa-book"></i> <span>Settings</span></a></li>
+
+          <li class="header">PLUGINS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -473,7 +493,7 @@
 
   <div class="content-wrapper">
 
-     <section class="content-header">
+     
       <section class="content-header">
             <div class="col-md-12 col-md-offset-4">
               <h1>
@@ -526,36 +546,36 @@
               <td>
               <table class="table table-hover">
                 <tr>
-                  <th>Sl no</th>
+                  <th>Sl_no</th>
                   <th>Liabilities</th>
-                  <th>Amount</th>
-                  <th>Total Amount</th>
-                  <th>Sl no</th>
+                  <th>Amount(&#8377)</th>
+                  <th>Total Amount(&#8377)</th>
+                  <th>Sl_no</th>
                   <th>Assets</th>
-                  <th>Amount</th>
-                  <th>Total Amount</th>
+                  <th>Amount(&#8377)</th>
+                  <th>Total Amount(&#8377)</th>
                   </tr>
                 
                 <tr>
                   <td>1</td>
                   <th>Capital account</th>
                   <td></td>
-                  <th>240000000</th>
+                  <th>240000000.00</th>
                   <td>1</td>
                   <th>Fixed Asset</th>
                   <td></td>
-                  <th>20000000</th>
+                  <th>20000000.00</th>
                   <!-- <td><span class="label label-success">Approved</span></td> -->
                   
                 </tr>
                   <tr>
                   <td></td>
                   <td><em>Capital account</em></td>
-                  <td>240000000</td>
+                  <td>240000000.00</td>
                   <td></td>
                   <td></td>
                   <td><em>Building</em></td>
-                  <td>20000000</td>
+                  <td>20000000.00</td>
                   <td></td>
                   <!-- <td><span class="label label-warning">Pending</span></td>
                   <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td> -->
@@ -564,96 +584,96 @@
                   <td>2</td>
                   <th>Loans(Liability)</th>
                   <td></td>
-                  <th>120000000</th>
+                  <th>120000000.00</th>
                   <td>2</td>
                   <th>Current Asset</th>
                   <td></td>
-                  <td>6,59,65,112,25</td>
+                  <td>6,59,65,112,25.00</td>
                 </tr>
                 <tr>
                   <td></td>
                   <td><em>Loan From Bank</em></td>
-                  <td>120000000</td>
+                  <td>120000000.00</td>
                   <td></td>
                   <td></td>
                   <td>Closing Stock</td>
-                  <td>2,51,65,005,25</td>
+                  <td>2,51,65,005,25.00</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <th>Current Liabilitties</th>
                   <td></td>
-                  <th>2,32,81,966,25</th>
+                  <th>2,32,81,966,25.00</th>
                   <td></td>
                   <td>Loans & Advances</td>
                   <td></td>
-                  <td>65,000,00</td>
+                  <td>65,000,00.00</td>
                 </tr>
                 <tr>
                  <td></td>
                   <td>Duties & Taxes</td>
-                  <td>1,34,586,75</td>
+                  <td>1,34,586,75.00</td>
                   <th></th>
                   <td></td>
                   <td>Sundry Debitors</td>
-                  <td>3,07,23,732,00</td>
+                  <td>3,07,23,732,00.00</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td>Sundry Creditors</td>
-                  <td>2,31,22,704,50</td>
+                  <td>2,31,22,704,50.00</td>
                   <th></th>
                   <td></td>
                   <td>Cash-in-Hand</td>
-                  <td>74,53,050,00</td>
+                  <td>74,53,050,00.00</td>
                   <th></th>
                 </tr>
                 <tr>
                   <td></td>
                   <td><em>CST Deffered Account</em></td>
-                  <td>3,200,00</td>
+                  <td>3,200,00.00</td>
                   <th></th>
                   <td></td>
                   <td>Bank Account</td>
-                  <td>25,52,825,00</td>
+                  <td>25,52,825,00.00</td>
                   <th></th>
                 </tr>
                 <tr>
                   <td></td>
                   <td><em>Interest Payable Account</em></td>
-                  <td>16,275,00</td>
+                  <td>16,275,00.00</td>
                   <th></th>
                   <td></td>
                   <td><em>CST Refunded Granted A/c</em></td>
-                  <td>2,000,00</td>
+                  <td>2,000,00.00</td>
                   <th></th>
                 </tr>
                 <tr>
                   <td></td>
                   <td><em>Tax Deffered A/c</em></td>
-                  <td>5,200,00</td>
+                  <td>5,200,00.00</td>
                   <th></th>
                   <td></td>
                   <td><em>Entry Tax</em></td>
-                  <td>3,500,00</td>
+                  <td>3,500,00.00</td>
                   <th></th>
                 </tr>
                 <tr>
                   <td>4</td>
                   <th>Branch/Division</th>
                   <td></td>
-                  <th>8,600,00</th>
+                  <th>8,600,00.00</th>
                   <td>3</td>
                   <th>Unadjusted Forex Gain/Loss</th>
                   <td></td>
-                  <th>12,588,00</th>
+                  <th>12,588,00.00</th>
                 </tr>
                 <tr>
                   <td></td>
                   <td><em>Branch/Division</em></td>
-                  <td>8,600,00</td>
+                  <td>8,600,00.00</td>
                   <th></th>
                   <td></td>
                   <td></td>
@@ -684,7 +704,7 @@
                   <td>6</td>
                   <th>Profit & Loss A/c</th>
                   <td></td>
-                  <th>3,52,87,104,00</th>
+                  <th>3,52,87,104,00.00</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -693,7 +713,7 @@
                  <tr>
                   <td></td>
                   <td>Opening Balance</td>
-                  <td>2,26,300,00</td>
+                  <td>2,26,300,00.00</td>
                   <th></th>
                   <td></td>
                   <td></td>
@@ -703,7 +723,7 @@
                  <tr>
                   <td></td>
                   <td>Closing Balance</td>
-                  <td>3,90,60,804,00</td>
+                  <td>3,90,60,804,00.00</td>
                   <th></th>
                   <td></td>
                   <td></td>
@@ -724,11 +744,11 @@
                   <td></td>
                   <th>Total</th>
                   <td></td>
-                  <th>6,61,77,670,25</th>
+                  <th>6,61,77,670,25.00</th>
                   <td></td>
                   <th>Total</th>
                   <td></td>
-                  <th>6,61,77,670,25</th>
+                  <th>6,61,77,670,25.00</th>
                 </tr>
                 </table>
                 </td>

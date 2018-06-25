@@ -333,7 +333,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Accounts</span>
+            <i class="fa fa-share"></i> <span>Entry & Posting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-         <li><a href="index3.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
+         <li><a href="trial_bal.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
 
            <li class="treeview">
           <a href="#">
@@ -420,7 +420,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Billing Vouchers</span>
+            <span>Invoicing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -431,7 +431,22 @@
             </ul>
             </li>
 
-            <li><a href="index3.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+            <li><a href="Stock_Sheet.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+
+            <li class="treeview">
+             <a href="#">
+             <i class="fa fa-pie-chart"></i>
+             <span>Cash & Bank Balance</span>
+             <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+             </span>
+             </a>
+            <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Cash Account</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Bank Account</a></li>
+            </ul>
+            </li>
+
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Tax Analysis</span></a></li>
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Create Voucher</span></a></li>
 
@@ -466,6 +481,11 @@
         
         
          <li><a href="index3.html"><i class="fa fa-book"></i> <span>Settings</span></a></li>
+
+          <li class="header">PLUGINS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -1118,10 +1138,10 @@
                   <th>HSN/SAC</th>
                   <th>GST RATE</th>
                   <th>Quantity</th>
-                  <th>Rate</th>
+                  <th>Rate(&#8377)</th>
                   <th>per</th>
                   <th>Disc%</th>
-                  <th>Amount</th>
+                  <th>Amount(&#8377)</th>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -1241,11 +1261,11 @@
                      
                      <tr>
                        <th>HSN/SAC</th>
-                       <th>Taxable <br>Value</th>
-                       <th>Central Tax</th>
-                       <th>State Tax</th>
-                       <th>IGST</th>
-                       <th>Total<br>Tax Amount</th>
+                       <th>Taxable <br>Value(&#8377)</th>
+                       <th>Central Tax(&#8377)</th>
+                       <th>State Tax(&#8377)</th>
+                       <th>IGST(&#8377)</th>
+                       <th>Total<br>Tax Amount(&#8377)</th>
                      </tr>
                      
                      <tr>
@@ -1268,7 +1288,7 @@
                      <th>
                        <table class="table table-bordered">
                          <tr>
-                           <th><small>Taxable Value</small></th>
+                           <th><small>Taxable Value(&#8377)</small></th>
                          </tr>
                          <tr>
                            <th><small>19,531.26</small></th>
@@ -1285,7 +1305,7 @@
                        <table class="table table-bordered">
                          <tr>
                            <th><small>Rate</small></th>
-                           <th><small>Amount</small></th>
+                           <th><small>Amount(&#8377)</small></th>
                          </tr>
                          <tr>
                            <td><small>14%</small></td>
@@ -1305,7 +1325,7 @@
                        <table class="table table-bordered">
                          <tr>
                            <th><small>Rate</small></th>
-                           <th><small>Amount</small></th>
+                           <th><small>Amount(&#8377)</small></th>
                          </tr>
                          <tr>
                            <td><small>14%</small></td>
@@ -1325,7 +1345,7 @@
                        <table class="table table-bordered">
                          <tr>
                            <th><small>Rate</small></th>
-                           <th><small>Amount</small></th>
+                           <th><small>Amount(&#8377)</small></th>
                          </tr>
                          <tr>
                            <td><small>0.00%</small></td>
@@ -1382,6 +1402,7 @@
           <input type="reset" class="btn btn-danger btn-block" value="Clear All">
           </div>
         </div>
+        <br>
         
     <!-- /.content -->
   

@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
 
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
@@ -333,7 +333,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Accounts</span>
+            <i class="fa fa-share"></i> <span>Entry & Posting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-         <li><a href="index3.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
+         <li><a href="trial_bal.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
 
            <li class="treeview">
           <a href="#">
@@ -420,7 +420,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Billing Vouchers</span>
+            <span>Invoicing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -431,7 +431,22 @@
             </ul>
             </li>
 
-            <li><a href="index3.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+            <li><a href="Stock_Sheet.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+
+            <li class="treeview">
+             <a href="#">
+             <i class="fa fa-pie-chart"></i>
+             <span>Cash & Bank Balance</span>
+             <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+             </span>
+             </a>
+            <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Cash Account</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Bank Account</a></li>
+            </ul>
+            </li>
+
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Tax Analysis</span></a></li>
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Create Voucher</span></a></li>
 
@@ -466,236 +481,199 @@
         
         
          <li><a href="index3.html"><i class="fa fa-book"></i> <span>Settings</span></a></li>
+
+          <li class="header">PLUGINS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="col-md-12 col-md-offset-4">
-      <h1>
-       <strong>Purchase Register</strong>
-       </h1>
-       </div>
-     </section>
 
-     <style type="text/css">
-      .table-bordered td, .table-bordered th{
-        border-color: black !important;
-      }
-     </style>
+     <section class="content-header">
+      <section class="content-header">
+            <div class="col-md-12 col-md-offset-4">
+              <h1>
+               <strong>Purchase Register</strong>
+              </h1>
+            </div>
+      </section>
+     
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box box-success">
-          
-          <div class="box-body table-responsive no-padding">
-            <table class="table table-bordered">
-              
-              <tr>
-                <th class="text-center" style="width: 40%;">Particulars</th>
-                <th class="text-center" style="width: 60%"><centre>ABC Company<br></centre>
-                <div class="col-md-12">
-    
-                <label class="col-md-4">Select Period:</label>
-              <div class="col-md-4">
-                <div class="input-group col-md-4">
-                  <div class="input-group-addon">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="box box-success">
+            <div class="box-header">
+
+             
+          <div class="col-lg-offset-6 col-md-offset-6 col-sm-offset-6 col-xs-offset-6">
+                <label class="col-lg-4col-md-4 col-sm-4 col-xs-4">Select Period:</label>
+                 
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <div class="input-group-addon" style="width: 20px">
                     <i class="fa fa-calendar"></i>
                   </div>
                   <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px">
+                
+                <!-- /.input group -->
+               </div>
+          </div>                  
+                             
                  
-              </div>  <!-- /.input group -->
-              </div>
-              </tr>
 
-              <tr>
-                <th>
-                  <table class="table table-bordered">
-                    <tr>
-                      <th class="text-center"><br><small>Months</small><br><br></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>April</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>May</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>June</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>July</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>August</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>September</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>October</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>November</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>December</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>January</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>February</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small>March</small></center></th>
-                      </tr>
-                      <tr>
-                      <th><center><small><br>Grand Total</small></center></th>
-                      </tr>
-                    </tr>
-                  </table>
-                </th>
-                      
-                      <th>
-                        <table class="table table-bordered">
-                          <tr>
-                            <th><center><small>Transactions</small></center></th>
-                            <th><center><small>Closing Balance</small></center></th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <table class="table table-bordered">
-                                <tr>
-                                  <th style="width: 50%"><center><small>Debit</small></center></th>
-                                  <th style="width: 50%"><center><small>Credit</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>77,45,475.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>28,11,300.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>39,73,500.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>31,37,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>31,31,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>19,60,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>23,55,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>24,50,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>39,20,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>22,96,250.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>16,87,500.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small></small></center></th>
-                                  <th><center><small>36,36,000.00</small></center></th>
-                                </tr>
-                                <tr>
-                                  <th><center><small><br></small></center></th>
-                                  <th><center><small><br>3,91,63,696.00</small></center></th>
-                                </tr>
-                              </table>
-                            </td>
-                            <td>
-                              
-                              <table class="table table-bordered">
-                                <tr>
-                                  <th><center><small>Closing Balance</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>37,45,475 Cr</small><center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,05,56,775.00 Cr</small><center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,45,30,275.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>1,76,63,696.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,07,56,946.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,27,56,896.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,51,78,999.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>2,71,34,389.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>3,14,63.567.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>3,56,89,899.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small>4,12,34,888.00 Cr</small></center></th>
-                                  <tr>
-                                  <th><center><small>4,52,34,888.00 Cr</small></center></th>
-                                  </tr>
-                                  <tr>
-                                  <th><center><small><br>4,52,34,888.00 Cr</small></center></th>
-                                  </tr>
-                                  </tr>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </th>
-              </tr>
-            </table>
+              <!-- <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-left" placeholder="Search">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div> -->
+            
+        <style type="text/css">
+
+            .table-bordered td, .table-bordered th{
+             border-color: #bfbfbf !important;
+                    
+               }
+        </style>
+      
+            <div class="box-body table-responsive no-padding">
+
+    
+              <table class="table table-bordered">
+                <tr>
+                <td>
+                <table class="table table-hover">
+                <tr>
+                  <th><center>Months</center></th>
+                  <th><center>Debit(&#8377)</center></th>
+                  <th><center>Credit(&#8377)</center></th>
+                  <th><center>Closing Balance(&#8377)</center></th>
+                  
+                  </tr>
+                
+                <tr>
+                  <th><center>April</center></th>
+                  <th><center></center></th>
+                  <th><center>77,45,475.00</center></th>
+                  <th><center>37,45,475.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>May</center></th>
+                  <th><center></center></th>
+                  <th><center>28,11,300.00</center></th>
+                  <th><center>1,05,56,775.00 Cr</center></th>
+                </tr>
+                  
+                
+                <tr>
+                  <th><center>June</center></th>
+                  <th><center></center></th>
+                  <th><center>39,73,500.00</center></th>
+                  <th><center>1,45,30,275.00 Cr</center></th>
+                </tr>
+
+               <tr>
+                  <th><center>July</center></th>
+                  <th><center></center></th>
+                  <th><center>31,37,250.00</center></th>
+                  <th><center>1,76,63,696.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>August</center></th>
+                  <th><center></center></th>
+                  <th><center>31,31,250.00</center></th>
+                  <th><center>2,07,56,896.00 Cr</center></th>
+                </tr>
+
+                 <tr>
+                  <th><center>September</center></th>
+                  <th><center></center></th>
+                  <th><center>19,60,000.00</center></th>
+                  <th><center>2,27,56,896.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>October</center></th>
+                  <th><center></center></th>
+                  <th><center>23,55,000.00</center></th>
+                  <th><center>2,51,78,999.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>November</center></th>
+                  <th><center></center></th>
+                  <th><center>24,50,000.00</center></th>
+                  <th><center>2,71,34,389.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>December</center></th>
+                  <th><center></center></th>
+                  <th><center>39,20,000.00</center></th>
+                  <th><center>3,14,63,567.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>January</center></th>
+                  <th><center></center></th>
+                  <th><center>22,96,250.00</center></th>
+                  <th><center>3,56,89,899.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>February</center></th>
+                  <th><center></center></th>
+                  <th><center>16,87,500.00</center></th>
+                  <th><center>4,12,34,888.00 Cr</center></th>
+                </tr>
+
+                <tr>
+                  <th><center>March</center></th>
+                  <th><center></center></th>
+                  <th><center>36,36,000.00</center></th>
+                  <th><center>4,52,34,888.00 Cr</center></th>
+                </tr>
+
+                 <tr>
+                  <th><center></center></th>
+                  <th><center></center></th>
+                  <th><center></center></th>
+                  <th><center></center></th>
+                </tr>
+
+                <tr>
+                  <th><center>Grand Total</center></th>
+                  <th><center></center></th>
+                  <th><center>3,91,63,696.00</center></th>
+                  <th><center>4,52,34,888.00 Cr</center></th>
+                </tr>
+
+                </table>
+                </td>
+                </tr>
+                 </table>
+                 </th>
+                 </tr>
+                </table>
+                </div>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
-
-
-
-  
-
-
-
-
-
-
-      <aside class="control-sidebar control-sidebar-dark">
+</div>
+           
+          <!-- /.box -->
+    <!-- /.content -->
+    <!-- /.content -->
+  <!-- /.content-wrapper -->
+  <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -897,6 +875,10 @@
 
 <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!-- Slimscroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -909,20 +891,16 @@
 <script src="../../dist/js/demo.js"></script>
 <script src="../../dist/js/select2.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-
-<script>
-$(function() {
+<script type="text/javascript">
+  
+  $(function() {
   $('input[name="daterange"]').daterangepicker({
     opens: 'left'
   }, function(start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    console.log("A new date selection was made: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
   });
 });
 </script>
-
 </body>
 </html>
+
