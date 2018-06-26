@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Profit & Loss Schedule III Format</title>
+  <title>Profit & Loss Schedule III</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -333,7 +333,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Accounts</span>
+            <i class="fa fa-share"></i> <span>Entry & Posting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-         <li><a href="index3.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
+         <li><a href="trial_bal.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
 
            <li class="treeview">
           <a href="#">
@@ -398,7 +398,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
+            <li><a href="Balance_Sheet_Overview1.html"><i class="fa fa-circle-o"></i> Balance Sheet Schedule III</a></li>
           </ul>
         </li>
 
@@ -412,7 +412,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="P&L.html"><i class="fa fa-circle-o"></i> Profit & Loss Overview</a></li>
-            <li><a href="P&L1.html"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III<br>Format</a></li>
+            <li><a href="P&L1.html"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III</a></li>
             </ul>
             </li>
 
@@ -420,7 +420,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Billing Vouchers</span>
+            <span>Invoicing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -431,7 +431,34 @@
             </ul>
             </li>
 
-            <li><a href="index3.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+          <li class="treeview">
+              <a href="#">
+              <i class="fa fa-table"></i> <span>Stock Sheet</span>
+              <span class="pull-right-container">
+               <i class="fa fa-angle-left pull-right"></i>
+              </span>
+              </a>
+          <ul class="treeview-menu">
+            <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i>Create</a></li>
+            <li><a href="Stock_Sheet.html"><i class="fa fa-circle-o"></i>Display</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Alter</a></li>
+          </ul>
+        </li>
+
+            <li class="treeview">
+             <a href="#">
+             <i class="fa fa-pie-chart"></i>
+             <span>Cash & Bank Balance</span>
+             <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+             </span>
+             </a>
+            <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Cash Account</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Bank Account</a></li>
+            </ul>
+            </li>
+
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Tax Analysis</span></a></li>
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Create Voucher</span></a></li>
 
@@ -466,164 +493,346 @@
         
         
          <li><a href="index3.html"><i class="fa fa-book"></i> <span>Settings</span></a></li>
+
+         <li class="header">PLUGINS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
 
-  <div class="content-wrapper">
 
-     <section class="content-header">
-      <section class="content-header">
-            <div class="col-md-12 col-md-offset-4">
-              <h1>
-               <strong>Profit & Loss Account</strong>
-              </h1>
+
+<div class="content-wrapper">
+
+<section class="content-header">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>
+               <strong><u>Profit & Loss Account as Per Companies Act, 2013</u></strong>
+              </h2>
             </div>
-      </section>
-     
+</section>
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="box box-info">
-            <div class="box-header">
+  
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div class="box box-info">
 
-             
-          <div class="">
-                <label class="col-lg-4col-md-4 col-sm-4 col-xs-4"><small>Select Period:</small></label>
-                 
-                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-6 col-md-offset-6 col-sm-offset-6 col-xs-offset-6">
+        <style type="text/css">
+
+          .table-bordered td, .table-bordered th{
+            border-color: #bfbfbf !important;
+                    
+               }
+        </style>
+       
+       <div class="box-body table-responsive no-padding">
+         
+         <table class="table table-bordered">
+          <tr>
+            <td>
+              <table class="table table-hover">
+              <tr>
+                <th style="width: 15%"><center><br><br><br>Sl_NO</center></th>
+                <th style="width: 40%"><center><br><br><br>Particulars</center></th>
+                <th style="width: 15%"><center><br><br><br>Note_No.</center></th>
+                <th style="width: 15%">
+                <center>ABC Company Pvt Ltd</center><br>
+               <center>Select Period:</center>
+              
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8">
                   <div class="input-group-addon" style="width: 20px">
                     <i class="fa fa-calendar"></i>
                   </div>
                   <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px">
                 
                 <!-- /.input group -->
-              </div>
-            </div>                  
-                             
-                 
-
-              <!-- <div class="box-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-left" placeholder="Search">
-
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
                 </div>
-              </div> -->
-              <style type="text/css">
-
-        .table-bordered td, .table-bordered th{
-           border-color: #bfbfbf !important;
-                    
-         }
-       </style>
+                </th>
+              
             
-            <div class="box-body table-responsive no-padding">
-              <table class="table table-bordered">
+                     
+
+                <th style="width: 15%">
+                    <center>ABC Company Pvt Ltd</center><br>
+              
+                 <center>Select Period:</center>
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <div class="input-group-addon" style="width: 20px">
+                   <center> <i class="fa fa-calendar"></i></center>
+                  </div>
+                 <center><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px"></center>
+                
+                <!-- /.input group -->
+                </div>
+            
+                     
+                </th>
+              </tr>
 
               <tr>
-              <td>
-              <table class="table table-hover">
+                <th><center>I</center></th>
+                <th><center>Revenue from Operations</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>II</center></th>
+                <th><center>Other Income</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>III</center></th>
+                <th><center>TOTAL REVENUE(I+II)</center></th>
+                <td><center></center></td>
+                <th><center>__________________<br><br>=================</center></th>
+                <th><center>__________________<br><br>=================</center></th>
+              </tr>
+
+              <tr>
+                <th><center>IV</center></th>
+                <th><center>EXPENSES</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Cost of Materials Consumed</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Purchases of Stock-in Trade</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Changes in Inventories</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Employee Benefit Expenses</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Finance Costs</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Depreciation and Amortization Expenses</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Other Expenses</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              
+              <tr>
+                <th><center></center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <th><center>TOTAL EXPENSES</center></th>
+                <td><center></center></td>
+                <th><center>__________________<br><br>=================</center></th>
+                <th><center>__________________<br><br>=================</center></th>
+              </tr>
+
+
+              <tr>
+                <th><center>V</center></th>
+                <th><center>Profit before Exceptional and Extraordinary Items and Tax (III-IV)</center></th>
+                <td><center></center></td>
+                <th><center></center></th>
+                <th><center></center></th>
+              </tr>
+                
                 <tr>
-                  <th>Sl no</th>
-                  <th>Particulars</th>
-                  <th>Total Amount</th>
-                  <th>Sl no</th>
-                  <th>Particulars</th>
-                  <th>Total Amount</th>
-                  </tr>
+                <th><center>VI</center></th>
+                <td><center>Exceptional Items</center></td>
+                <td><center></center></td>
+                <td><center><br>_________________________</center></td>
+                <td><center><br>_________________________</center></td>
+              </tr>
 
-                  <tr>
-                    <th>1</th>
-                    <th>Opening Stock</th>
-                    <th>16,81,848.44</th>
-                    <th>1</th>
-                    <th>Sales Account</th>
-                    <th>4,32,99,616.28</th> 
-                  </tr>
+              <tr>
+                <th><center>VII</center></th>
+                <th><center>Profit before Extraordinary Items and Tax</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
 
-                  <tr>
-                    <th>2</th>
-                    <th>Purchase Accounts</th>
-                    <th>2,74,43,682.50</th>
-                    <th>2</th>
-                    <th>Direct Incomes</th>
-                    <th>56,550.00</th> 
-                  </tr>
-                      
-                  <tr>
-                    <th>3</th>
-                    <th>Gross Profit c/o</th>
-                    <th>2,17,81,930.40</th>
-                    <th>3</th>
-                    <th>Closing Stock</th>
-                    <th>75,94,295.06</th> 
-                  </tr>  
+              <tr>
+                <th><center>VII</center></th>
+                <td><center>Extraordinary Items</center></td>
+                <td><center></center></td>
+                <td><center><br>_________________________</center></td>
+                <td><center><br>_________________________</center></td>
+              </tr>
 
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th>_____________<br>5,09,50,461.34<br>_____________</th>
-                    <th></th>
-                    <th></th>
-                    <th>_____________<br>5,09,50,461.34<br>_____________</th> 
-                  </tr>
+              <tr>
+                <th><center>IX</center></th>
+                <th><center>Profit before Tax</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
 
-                  <tr>
-                    <th>4</th>
-                    <th>Indirect Expenses</th>
-                    <th>73,30,923.75</th>
-                    <th>4</th>
-                    <th>Gross Profit b/f</th>
-                    <th>2,17,81,930</th> 
-                  </tr> 
-                  <tr>
-                    <th>5</th>
-                    <th>Nett Profit</th>
-                    <th>1,55,01,006.65</th>
-                    <th>5</th>
-                    <th>Indirect Incomes</th>
-                    <th>10,50,000.00</th> 
-                  </tr> 
+              <tr>
+                <th><center>X</center></th>
+                <td><center>Tax Expenses</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
 
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th> 
-                  </tr> 
+              <tr>
+                <th><center></center></th>
+                <td><center>Current Tax</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
 
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th> 
-                  </tr> 
+              <tr>
+                <th><center></center></th>
+                <td><center>Deffered Tax</center></td>
+                <td><center></center></td>
+                <td><center><br>_________________________</center></td>
+                <td><center><br>_________________________</center></td>
+              </tr>
 
-                  <tr>
-                    <th></th>
-                    <th>Total</th>
-                    <th>2,28,31,930.40</th>
-                    <th></th>
-                    <th>Total</th>
-                    <th>2,28,31,930.40</th> 
-                  </tr> 
-                  </table>
-                  </td>
-                  </tr>
-                </table>
-                </div>
-              </div>
-          </div>
+              <tr>
+                <th><center>XI</center></th>
+                <th><center>Profit/(Loss) for the period from Continuing Operations(IX_X)</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>XII</center></th>
+                <td><center>Profit/(Loss) from Discontinuing Operations</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>XIII</center></th>
+                <td><center>Tax Expense of Discontinuing Operations</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>XIV</center></th>
+                <th><center>Profit/(Loss) from Discontinuing Operations(after tax)(XII-XIII)</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center>XV</center></th>
+                <th><center>Profit/(Loss) for the period (XI+XIV)</center></th>
+                <td><center></center></td>
+                <td><center>_______________________<br>========================</center></td>
+                <td><center>_______________________<br>========================</center></td>
+              </tr>
+
+
+                
+              <tr>
+                <th><center>XVI</center></th>
+                <th><center>Earnings per Equity Share</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+
+              <tr>
+                <th><center><center></th>
+                <td><center>-Basic</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+
+              <tr>
+                <th><center></center></th>
+                <td><center>-Diluted</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+           
+         </table>
+       </div>
+     </div>
+      
+    </div>
+  </div>
+
+  <div class="row no-print">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="../../Print/P&L1_print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          
+          <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+            <i class="fa fa-download"></i> Generate PDF
+          </button>
         </div>
-</div>
+      </div>
+      <br>
+      <br>
+
+ 
            
           <!-- /.box -->
     <!-- /.content -->

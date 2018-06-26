@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Balance Sheet Data</title>
+  <title>Balance Sheet Schedule III</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -333,7 +333,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span>Accounts</span>
+            <i class="fa fa-share"></i> <span>Entry & Posting</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-         <li><a href="index3.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
+         <li><a href="trial_bal.html"><i class="fa fa-book"></i> <span>Trial Balance</span></a></li>
 
            <li class="treeview">
           <a href="#">
@@ -398,7 +398,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i> Balance Sheet Overview</a></li>
-            <li><a href="Balance_Sheet_Data.html"><i class="fa fa-circle-o"></i> Balance Sheet Data</a></li>
+            <li><a href="Balance_Sheet_Overview1.html"><i class="fa fa-circle-o"></i> Balance Sheet Schedule III</a></li>
           </ul>
         </li>
 
@@ -411,8 +411,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Profit & Loss Overview</a></li>
-            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III<br>Format</a></li>
+            <li><a href="P&L.html"><i class="fa fa-circle-o"></i> Profit & Loss Overview</a></li>
+            <li><a href="P&L1.html"><i class="fa fa-circle-o"></i> Profit & Loss Schedule III</a></li>
             </ul>
             </li>
 
@@ -420,7 +420,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span>Billing Vouchers</span>
+            <span>Invoicing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -431,7 +431,34 @@
             </ul>
             </li>
 
-            <li><a href="index3.html"><i class="fa fa-book"></i> <span>Stock Sheet</span></a></li>
+          <li class="treeview">
+              <a href="#">
+              <i class="fa fa-table"></i> <span>Stock Sheet</span>
+              <span class="pull-right-container">
+               <i class="fa fa-angle-left pull-right"></i>
+              </span>
+              </a>
+          <ul class="treeview-menu">
+            <li><a href="Balance_Sheet_Overview.html"><i class="fa fa-circle-o"></i>Create</a></li>
+            <li><a href="Stock_Sheet.html"><i class="fa fa-circle-o"></i>Display</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Alter</a></li>
+          </ul>
+        </li>
+
+            <li class="treeview">
+             <a href="#">
+             <i class="fa fa-pie-chart"></i>
+             <span>Cash & Bank Balance</span>
+             <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+             </span>
+             </a>
+            <ul class="treeview-menu">
+            <li><a href="pages/tables/Sales_Invoice.html"><i class="fa fa-circle-o"></i> Cash Account</a></li>
+            <li><a href="pages/tables/Purchase_Invoice.html"><i class="fa fa-circle-o"></i> Bank Account</a></li>
+            </ul>
+            </li>
+
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Tax Analysis</span></a></li>
             <li><a href="index3.html"><i class="fa fa-book"></i> <span>Create Voucher</span></a></li>
 
@@ -466,260 +493,394 @@
         
         
          <li><a href="index3.html"><i class="fa fa-book"></i> <span>Settings</span></a></li>
+
+         <li class="header">PLUGINS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
 
-  <div class="content-wrapper">
 
-     <section class="content-header">
-      <div class="col-md-6 col-md-offset-6">
-      
-                <label>Select Period:</label>
 
-                <div class="input-group">
-                  <div class="input-group-addon">
+<div class="content-wrapper">
+
+<section class="content-header">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>
+               <strong><u>Balance Sheet as Per Companies Act, 2013</u></strong>
+              </h2>
+            </div>
+</section>
+
+  
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div class="box box-info">
+
+        <style type="text/css">
+
+          .table-bordered td, .table-bordered th{
+            border-color: #bfbfbf !important;
+                    
+               }
+        </style>
+       
+       <div class="box-body table-responsive no-padding">
+         
+         <table class="table table-bordered">
+          <tr>
+            <td>
+              <table class="table table-hover">
+              <tr>
+                <th style="width: 15%"><center><br><br><br>Sl_NO</center></th>
+                <th style="width: 40%"><center><br><br><br>Particulars</center></th>
+                <th style="width: 15%"><center><br><br><br>Note_No.</center></th>
+                <th style="width: 15%">
+                <center>ABC Company Pvt Ltd</center><br>
+               <center>Select Period:</center>
+              
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <div class="input-group-addon" style="width: 20px">
                     <i class="fa fa-calendar"></i>
                   </div>
                   <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px">
-                </div>
+                
                 <!-- /.input group -->
-              </div>
-              
-     </section>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box">
-            <div class="box-header">
-              <h1 class="box-title"><strong>Balance Sheet</strong> </h1>
-              </div>  
-                 
-
-              <!-- <div class="box-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-left" placeholder="Search">
-
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
                 </div>
-              </div> -->
+                </th>
+              
             
-            <div class="box-body table-responsive no-padding">
-              <table class="table table-bordered">
-                <tr>
-                  <th>Sl no</th>
-                  <th>Liabilities</th>
-                  <th>Amount</th>
-                  <th>Total Amount</th>
-                  <th>Sl no</th>
-                  <th>Assets</th>
-                  <th>Amount</th>
-                  <th>Total Amount</th>
-                  </tr>
+                     
+
+                <th style="width: 15%">
+                    <center>ABC Company Pvt Ltd</center><br>
+              
+                 <center>Select Period:</center>
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <div class="input-group-addon" style="width: 20px">
+                   <center> <i class="fa fa-calendar"></i></center>
+                  </div>
+                 <center><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" style="width: 200px"></center>
+                
+                <!-- /.input group -->
+                </div>
+            
+                     
+                </th>
+              </tr>
+
+              <tr>
+                <th><center>I</center></th>
+                <th><center>EQUITY AND LIABILITIES</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th class="text-right">1</th>
+                <th><center>Shareholder's Funds</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Share Capital</center></td>
+                <td><center></center></td>
+                <th><center></center></th>
+                <th><center></center></th>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Reserves and Surplus</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Money Received Aganist Share Warrants</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th class="text-right">2</th>
+                <th><center>Share Application money pending allotment</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th class="text-right">3</th>
+                <th><center>Non-Current Liabilities</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Long-Term Borrowings</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Deffered Tax Liabilities(Net)</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Other Long-Term Liabilities</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Long-Term Provisions</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              
+              <tr>
+                <th class="text-right">4</th>
+                <th><center>Current Liabilities</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th></th>
+                <td><center>Short Term Borrowings</center></td>
+                <td><center></center></td>
+                <th><center></center></th>
+                <th><center></center></th>
+              </tr>
+
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Trade Payables</center></td>
+                <td><center></center></td>
+                <th><center></center></th>
+                <th><center></center></th>
+              </tr>
                 
                 <tr>
-                  <td>1</td>
-                  <th>Capital account</th>
-                  <td></td>
-                  <th>240000000</th>
-                  <td>1</td>
-                  <th>Fixed Asset</th>
-                  <td></td>
-                  <th>20000000</th>
-                  <!-- <td><span class="label label-success">Approved</span></td> -->
-                  
-                </tr>
-                  <tr>
-                  <td></td>
-                  <td><em>Capital account</em></td>
-                  <td>240000000</td>
-                  <td></td>
-                  <td></td>
-                  <td><em>Building</em></td>
-                  <td>20000000</td>
-                  <td></td>
-                  <!-- <td><span class="label label-warning">Pending</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td> -->
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <th>Loans(Liability)</th>
-                  <td></td>
-                  <th>120000000</th>
-                  <td>2</td>
-                  <th>Current Asset</th>
-                  <td></td>
-                  <td>6,59,65,112,25</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><em>Loan From Bank</em></td>
-                  <td>120000000</td>
-                  <td></td>
-                  <td></td>
-                  <td>Closing Stock</td>
-                  <td>2,51,65,005,25</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <th>Current Liabilitties</th>
-                  <td></td>
-                  <th>2,32,81,966,25</th>
-                  <td></td>
-                  <td>Loans & Advances</td>
-                  <td></td>
-                  <td>65,000,00</td>
-                </tr>
-                <tr>
-                 <td></td>
-                  <td>Duties & Taxes</td>
-                  <td>1,34,586,75</td>
-                  <th></th>
-                  <td></td>
-                  <td>Sundry Debitors</td>
-                  <td>3,07,23,732,00</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>Sundry Creditors</td>
-                  <td>2,31,22,704,50</td>
-                  <th></th>
-                  <td></td>
-                  <td>Cash-in-Hand</td>
-                  <td>74,53,050,00</td>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><em>CST Deffered Account</em></td>
-                  <td>3,200,00</td>
-                  <th></th>
-                  <td></td>
-                  <td>Bank Account</td>
-                  <td>25,52,825,00</td>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><em>Interest Payable Account</em></td>
-                  <td>16,275,00</td>
-                  <th></th>
-                  <td></td>
-                  <td><em>CST Refunded Granted A/c</em></td>
-                  <td>2,000,00</td>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><em>Tax Deffered A/c</em></td>
-                  <td>5,200,00</td>
-                  <th></th>
-                  <td></td>
-                  <td><em>Entry Tax</em></td>
-                  <td>3,500,00</td>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <th>Branch/Division</th>
-                  <td></td>
-                  <th>8,600,00</th>
-                  <td>3</td>
-                  <th>Unadjusted Forex Gain/Loss</th>
-                  <td></td>
-                  <th>12,588,00</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><em>Branch/Division</em></td>
-                  <td>8,600,00</td>
-                  <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td>5</td>
-                  <th>Suspense A/c</th>
-                  <td></td>
-                  <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td></td>
-                  <td><em>Refund Claim on Export</em></td>
-                  <td>__________</td>
-                  <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td>6</td>
-                  <th>Profit & Loss A/c</th>
-                  <td></td>
-                  <th>3,52,87,104,00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td></td>
-                  <td>Opening Balance</td>
-                  <td>2,26,300,00</td>
-                  <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td></td>
-                  <td>Closing Balance</td>
-                  <td>3,90,60,804,00</td>
-                  <th></th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <th></th>
-                </tr>
-                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                 <tr>
-                  <td></td>
-                  <th>Total</th>
-                  <td></td>
-                  <th>6,61,77,670,25</th>
-                  <td></td>
-                  <th>Total</th>
-                  <td></td>
-                  <th>6,61,77,670,25</th>
-                </tr>
-                </table>
-                </div>
-              </div>
-          </div>
+                <th><center></center></th>
+                <td><center>Other Current Liabilities</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <th><center>Short-Term Provisions</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <th><center>Total</center></th>
+                <td><center></center></td>
+                <td><center><br>_________________________</center></td>
+                <td><center><br>_________________________</center></td>
+              </tr>
+
+              <tr>
+                <th><center>II</center></th>
+                <th><center>ASSETS</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th class="text-right">1</th>
+                <th><center>Non-Current Assets</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Fixed Assets</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td class="text-right">(i) <em>Tangible Assets</em></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td class="text-right">(ii) <em>Intangible Assets</em></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              
+              <tr>
+                <th><center></center></th>
+                <td><center>Non-Current Investment</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Deferred Tax Assets(Net)</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Long-Term Loans and Advances</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+
+                
+              <tr>
+                <th><center></center></th>
+                <td><center>Other Non-Current Assets</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+
+              <tr>
+                <th class="text-right">2</th>
+                <th><center>Current Asset</center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Current Investment</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Inventories</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Trade receivables</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Cash and Cash Equivalents</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Short-Term Loans and Advances</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <td><center>Other Current Assets</center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+              <tr>
+                <th><center></center></th>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+                <td><center></center></td>
+              </tr>
+
+              <tr>
+                <th><center></center></th>
+                <th><center>Total</center></th>
+                <td><center></center></td>
+                <td><center>___________________________<br>___________________________</center></td>
+                <td><center>___________________________<br>___________________________</center></td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+           
+         </table>
+       </div>
+     </div>
+      
+    </div>
+  </div>
+
+  <div class="row no-print">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="../../Print/BAL1_print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          
+          <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+            <i class="fa fa-download"></i> Generate PDF
+          </button>
         </div>
-</div>
+      </div>
+      <br>
+      <br>
+
+ 
            
           <!-- /.box -->
     <!-- /.content -->
